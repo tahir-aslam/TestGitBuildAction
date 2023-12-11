@@ -23,7 +23,7 @@ namespace TestGitBuildAction.Tests
 
        
         [TestCase(250, 250, 0)]
-        [TestCase(350, 250, 0)]
+        [TestCase(350, 250, 50)]
         public void Subtract(int a, int b, int result)
         {
             int expected = a - b;

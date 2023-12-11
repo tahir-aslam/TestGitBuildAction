@@ -1,3 +1,5 @@
+using NUnit.Framework;
+
 namespace TestGitBuildAction.Tests
 {
     public class Tests
@@ -7,10 +9,16 @@ namespace TestGitBuildAction.Tests
         {
         }
 
-        [Test]
-        public void Test1()
+        [TestCase(2, 2, 4)]
+        [TestCase(10, 10, 20)]
+        [TestCase(20, 20, 40)]
+        [TestCase(200, 200, 400)]
+        [TestCase(250, 250, 500)]
+        public void Add(int a, int b, int result)
         {
-            Assert.Pass();
+            int expected = a + b;
+
+            Assert.AreEqual(expected, result);
         }
     }
 }

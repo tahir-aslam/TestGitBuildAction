@@ -20,5 +20,14 @@ namespace TestGitBuildAction.Tests
 
             Assert.AreEqual(expected, result);
         }
+
+       
+        [TestCase(250, 250, 0)]
+        public void Subtract(int a, int b, int result)
+        {
+            int expected = a - b;
+
+            Assert.AreEqual(expected, result);
+        }
     }
 }

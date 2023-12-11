@@ -23,7 +23,7 @@ namespace TestGitBuildAction.Tests
 
         [TestCase(2, 2, 4)]
         [TestCase(10, 10, 100)]
-        [TestCase(20, 20, 500)]
+        [TestCase(20, 20, 400)]
         public void Multiply(int a, int b, int result)
         {
             int expected = a * b;
